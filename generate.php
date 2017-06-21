@@ -35,9 +35,15 @@ echo "pattern elevation=" . $_POST['patternElevation'] . "\n";
 echo "pattern size=" . $_POST['patternLength'] . "\n";
 echo "initial climb props=" . $_POST['initalClimbProps'] . "\n";
 echo "initial climb jets=" . $_POST['initalClimbJets'] . "\n";
-echo "jet airlines=" . $_POST['jetAirlines'] . "\n";
-echo "turboprop airlines=" . $_POST['turbopropAirlines'] . "\n";
-echo "Registration=" . $_POST['registration'] . "\n\n";
+if($_POST['jetAirlines'])
+{
+    echo "jet airlines=" . $_POST['jetAirlines'] . "\n";
+}
+if($_POST['turbopropAirlines'])
+{
+    echo "turboprop airlines=" . $_POST['turbopropAirlines'] . "\n";
+}
+echo "registration=" . $_POST['registration'] . "\n\n";
 
 foreach ($stands as $stand)
 {
