@@ -11,7 +11,7 @@
 <b>Magnetic Variation: </b><input type="text" name="magneticVariation"><br />
 <b>Field Elevation: </b><input type="text" name="fieldElevation" placeholder="Field Elevation (ft)"><br />
 <b>Pattern Elevation: </b><input type="text" name="patternElevation" placeholder="Pattern Elevation (ft)"><br />
-<b>Pattern Length: </b><input type="text" name="Pattern Length" placeholder="Nautical Miles (NM)"><br />
+<b>Pattern Length: </b><input type="text" name="patternLength" placeholder="Nautical Miles (NM)"><br />
 <b>Initial Climb (Props): </b><input type="text" name="initalClimbProps" placeholder="Initial Climb for Props (ft)"><br />
 <b>Initial Climb (Jets): </b><input type="text" name="initalClimbJets" placeholder="Initial Climb for Jets (ft)"><br />
 <b>Jet Airlines: </b><input type="text" name="jetAirlines" placeholder="Jet Airlines (seperate with commas)"><br />
@@ -19,7 +19,8 @@
 <b>Registration: </b><input type="text" name="registration" placeholder="Country Registration Prefix (N for USA)"><br />
 <hr>
 <b>Google Earth KML:</b><br>
-<textarea name="kml" rows="20" cols="150"></textarea>
+<textarea name="kml" rows="20" cols="150"></textarea><br />
+<input type="submit" value="Generate">;
 </form>
 </body>
 </html>
