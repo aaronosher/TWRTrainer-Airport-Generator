@@ -20,7 +20,7 @@
 <hr>
 <b>Google Earth KML:</b><br>
 <textarea name="kml" rows="20" cols="150"></textarea><br />
-<input type="submit" value="Generate">;
+<input type="submit" value="Generate">
 </form>
 </body>
 </html>
