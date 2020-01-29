@@ -2,9 +2,9 @@
 
 $kml = new SimpleXMLElement($_POST['kml']);
 
-$kml = $kml->Document->Folder->Folder;
+@$kml = $kml->Document->Folder->Folder;
 
-foreach ($kml as $folder)
+@foreach ($kml as $folder)
 {
     switch ($folder->name) {
         case 'Runways':
