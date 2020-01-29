@@ -4,6 +4,9 @@ $kml = new SimpleXMLElement($_POST['kml']);
 
 $kml = $kml->Document->Folder->Folder;
 
+Header("Content-Type: text/plain");
+Header("Content-Disposition: attachment; filename=" . $_POST['icao'] . ".apt");
+
 foreach ($kml as $folder)
 {
     switch ($folder->name) {
@@ -24,9 +27,6 @@ foreach ($kml as $folder)
             break;
     }
 }
-
-Header("Content-Type: text/plain");
-Header("Content-Disposition: attachment; filename=" . $_POST['icao'] . ".apt");
 
 echo "icao=" . $_POST['icao'] . "\n";
 echo "magnetic variation=" . $_POST['magneticVariation'] . "\n";
